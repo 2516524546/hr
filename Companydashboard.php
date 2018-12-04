@@ -9,10 +9,11 @@ class Companydashboard extends Controller
     {
         $pic = Session::get('pic');
         $userid =session('id');
+        $type_id = Session::get('type_id');
         if (empty($userid)) {
             return $this->error('你还未登录',"/index/login/login");
         }
-        $type_id = Session::get('type_id');
+         
         // halt($type_id);
         $this->assign([
             'type_id' => $type_id
