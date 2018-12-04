@@ -112,7 +112,7 @@ class Companydashresume extends Base
 
     }
 
-
+//删除多余
     public function  jobdouble($job){
         foreach ($job as $key => $value) {
             foreach ($job as $key2 => $value2) {
